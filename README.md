@@ -9,10 +9,10 @@ Yg digunakan :
 2. Bootstrap Freamwork V.4
 3. Database MySQL 
 Configurasi Default Untuk Database :
-host		: localhost
-user		: root
-password	:			(*dikosongkan)
-nama db		: db_arkademy
+* host		  : localhost
+* user		  : root
+* password	:			(*dikosongkan) 
+* nama db		: db_arkademy
 -----------------------------------------
 *Keterangan : 
 Didalam Struktur table "nama" disoal terdapat 4Field {id,name,id_hobby,id_category}.
