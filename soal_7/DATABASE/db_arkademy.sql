@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 29, 2019 at 03:00 PM
+-- Generation Time: Jun 29, 2019 at 03:58 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.10
 
@@ -34,6 +34,14 @@ CREATE TABLE `hobi` (
   `id_kategori` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `hobi`
+--
+
+INSERT INTO `hobi` (`id`, `name`, `id_kategori`) VALUES
+(1, 'Mobile Legend', 1),
+(2, 'Futsal', 2);
+
 -- --------------------------------------------------------
 
 --
@@ -44,6 +52,14 @@ CREATE TABLE `kategori` (
   `id` int(11) NOT NULL,
   `name` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `kategori`
+--
+
+INSERT INTO `kategori` (`id`, `name`) VALUES
+(1, 'Game'),
+(2, 'Olahraga');
 
 -- --------------------------------------------------------
 
@@ -56,6 +72,14 @@ CREATE TABLE `nama` (
   `name` varchar(100) NOT NULL,
   `id_hobby` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `nama`
+--
+
+INSERT INTO `nama` (`id`, `name`, `id_hobby`) VALUES
+(1, 'Sonie', 1),
+(2, 'Isgie', 2);
 
 --
 -- Indexes for dumped tables
@@ -101,7 +125,7 @@ ALTER TABLE `kategori`
 -- AUTO_INCREMENT for table `nama`
 --
 ALTER TABLE `nama`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
