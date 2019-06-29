@@ -13,21 +13,24 @@ function segitiga($n){
         //Looping Kolom Bintang Sisi Kiri
         $kiri = 0;
         while($kiri <= ($n-$brs)){
-            echo "*";
+            if($kiri < 1 || $brs==1){
+                echo "*";
+            }else{
+                echo " ";
+            }
             $kiri++;
         }
         //Looping Kolom Bintang Sisi Kanan
         $kanan = $kiri;
         while($kanan > 1){
-            echo "*";
+            if($kanan==2 || $brs==1){
+                echo "*";
+            }else{
+                echo " ";
+            }
             $kanan--;
         }
         echo "\n";
-        //Lopping Kolom Kosong (Untuk membuat Lubang)
-        $ksg = $kolom;
-        while(false){
-            
-        }
         $brs++;
     }
 }
